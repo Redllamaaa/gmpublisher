@@ -1,0 +1,1 @@
+{"default":{"identifier":"default","description":"Capabilities for the main gmpublisher window","local":true,"windows":["gmpublisher"],"permissions":["core:default","dialog:allow-open","opener:allow-open-url","opener:allow-default-urls"]}}
