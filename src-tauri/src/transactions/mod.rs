@@ -9,7 +9,6 @@ use std::sync::{
 	Arc, Weak,
 };
 
-use crate::dprintln;
 
 use self::websocket::{TransactionMessage, TransactionServer};
 

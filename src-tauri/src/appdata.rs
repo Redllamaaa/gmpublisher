@@ -8,8 +8,7 @@ use std::{
 };
 
 use crate::{
-	gma::{ExtractDestination, ExtractionOverwriteMode},
-	webview_emit, RwLockCow,
+	gma::{ExtractDestination, ExtractionOverwriteMode}, RwLockCow,
 };
 
 use crate::GMOD_APP_ID;

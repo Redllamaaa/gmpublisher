@@ -8,7 +8,7 @@ use std::{
 	},
 };
 
-use crate::{app_data, transactions::Transaction};
+use crate::transactions::Transaction;
 
 use super::{whitelist, GMAEntry, GMAError, GMAFile, GMAMetadata, GMAReader};
 

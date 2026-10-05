@@ -18,7 +18,6 @@ use crate::{
 	Transaction,
 };
 
-use crate::webview_emit;
 
 pub mod downloads;
 pub mod publishing;
@@ -168,11 +167,11 @@ impl Steam {
 		webview_emit!(if connected { "SteamConnected" } else { "SteamDisconnected" });
 	}
 
-	pub fn client(&self) -> AtomicRefSome<Interface> {
+	pub fn client(&self) -> AtomicRefSome<'_, Interface> {
 		self.interface.borrow().into()
 	}
 
-	pub fn client_wait(&self) -> AtomicRefSome<Interface> {
+	pub fn client_wait(&self) -> AtomicRefSome<'_, Interface> {
 		loop {
 			if self.connected() {
 				if let Ok(interface) = self.interface.try_borrow() {

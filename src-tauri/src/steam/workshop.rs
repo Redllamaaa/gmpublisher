@@ -16,7 +16,7 @@ use parking_lot::Mutex;
 
 use super::{users::SteamUser, Steam};
 
-use crate::{main_thread_forbidden, webview::Addon, GMOD_APP_ID};
+use crate::{webview::Addon, GMOD_APP_ID};
 
 #[derive(Serialize, Clone, Debug)]
 #[serde(rename_all = "camelCase")]

@@ -9,9 +9,7 @@ use steamworks::{ClientManager, ItemState, PublishedFileId, QueryResults, UGC};
 
 use crate::{
 	gma::{ExtractDestination, ExtractGMAMut},
-	transaction,
-	transactions::Transaction,
-	webview_emit, GMAFile, GMOD_APP_ID,
+	transactions::Transaction, GMAFile, GMOD_APP_ID,
 };
 
 lazy_static! {

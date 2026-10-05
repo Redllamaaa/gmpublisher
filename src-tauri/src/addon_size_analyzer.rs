@@ -7,7 +7,7 @@ use steamworks::PublishedFileId;
 
 use serde::Serialize;
 
-use crate::{game_addons, transaction, transactions::Transaction, webview::Addon};
+use crate::{transactions::Transaction, webview::Addon};
 
 lazy_static! {
 	static ref THREAD_POOL: ThreadPool = thread_pool!(4);
